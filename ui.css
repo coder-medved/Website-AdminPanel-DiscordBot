@@ -1,0 +1,46 @@
+.navbar-btn {
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+
+.navbar-btn span {
+    text-align: center;
+}
+
+.navbar-btn img {
+    width: 1rem;
+    height: 1rem;
+}
+
+.navbar-btn::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    background-color: #fff;
+    right: 0;
+    bottom: 0;
+    transition: width 0.3s ease;
+}
+
+.navbar-btn:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.navbar-logo {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-logo span {
+    text-align: center;
+    color: white
+}
